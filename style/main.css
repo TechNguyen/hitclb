@@ -54,11 +54,13 @@ body {
     font-weight: 600;
     margin: 0 0.4rem;
 }
-.header-item:hover {
+.header-item,
+.hit-class_nav li:hover {
     background-color: var(--primary);
     color: white;
 }
-.header-login {
+.header-login,
+.hit-class_btn {
     font-size: 1rem;
     text-decoration: none;
     font-weight: bolder;
@@ -70,7 +72,8 @@ body {
     background-color: transparent;
     transition: all 0.35s linear;
 }
-.header-login:hover {
+.header-login,
+.hit-class_btn:hover {
     background-color: var(--primary);
     color: white;
 }
@@ -322,4 +325,56 @@ body {
 }
 .hit-director:hover > .hit-img::after  {
     z-index: 2;
+}
+
+
+
+#hit-classes {
+    text-align: center;
+}
+.hit-classes_title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 2rem 1rem;
+}
+.hit-class_nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+.hit-class_nav li {
+    padding: 0.4rem 0.4rem;
+    border-radius: 7px;
+    transition: all 0.2s linear;
+    background-color: var(--background);
+    font-size: 1rem;
+    font-weight: 100;
+}
+.hit-class_item {
+
+}
+.hit-class_item-infor {
+    display: flex;
+}
+.item-introduce_nav {
+    display: flex;
+    flex-wrap: nowrap;justify-content: space-between;
+}
+.hit-class_infor {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.53);
+}
+
+
+
+
+
+
+
+.hit-class_btn {
+    font-size: 1.2rem;
+    font-weight: 500;
 }
