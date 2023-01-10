@@ -54,7 +54,10 @@ body {
     font-weight: 600;
     margin: 0 0.4rem;
 }
-.header-item,
+.header-item:hover {
+    background-color: var(--primary);
+    color: white;
+}
 .hit-class_nav li:hover {
     background-color: var(--primary);
     color: white;
@@ -72,7 +75,10 @@ body {
     background-color: transparent;
     transition: all 0.35s linear;
 }
-.header-login,
+.header-login:hover {
+    background-color: var(--primary);
+    color: white;
+}
 .hit-class_btn:hover {
     background-color: var(--primary);
     color: white;
@@ -326,11 +332,9 @@ body {
 .hit-director:hover > .hit-img::after  {
     z-index: 2;
 }
-
-
-
 #hit-classes {
     text-align: center;
+    padding: 5rem 5rem;
 }
 .hit-classes_title {
     font-size: 2.5rem;
@@ -344,6 +348,7 @@ body {
     align-items: center;
     cursor: pointer;
     margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 .hit-class_nav li {
     padding: 0.4rem 0.4rem;
@@ -354,10 +359,17 @@ body {
     font-weight: 100;
 }
 .hit-class_item {
-
+    display: grid;
+    gap: 1.3rem;
+    grid-template-columns: repeat(2,1fr);
 }
 .hit-class_item-infor {
     display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid var(--primary);
+    padding: 2rem;
 }
 .item-introduce_nav {
     display: flex;
@@ -367,13 +379,41 @@ body {
     font-size: 0.9rem;
     color: rgba(0, 0, 0, 0.53);
 }
-
-
-
-
-
-
-
+.item-name {
+    display: flex;
+    align-items: center;
+    color: var(--primary);
+    font-size: 1.2rem;
+    position: relative;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgb(242, 227, 217);
+    clip-path: polygon(50% 0%,100% 50%,50% 100%,0% 50%);
+    position: relative;
+}
+.name-class {
+    text-align: left;
+    color: var(--primary);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.9rem;
+}
+.item-introduce {
+    display: table;
+    margin-bottom: 2rem;
+}
+.item-introduce_nav {
+    display: table-row;
+    padding: 1rem;
+}
+.cell {
+    display: table-cell;
+    padding: 0.2rem 1rem 0.2rem 0;
+    text-align: left;
+}
+.item-infor {
+    margin-left:  5rem;
+}
 .hit-class_btn {
     font-size: 1.2rem;
     font-weight: 500;
