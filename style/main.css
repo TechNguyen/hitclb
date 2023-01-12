@@ -418,3 +418,265 @@ body {
     font-size: 1.2rem;
     font-weight: 500;
 }
+
+#hit-more_event {
+    background-image: url(../img/tuyenthanhvien.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding: 4rem 5rem 25rem 5rem;
+    position: relative;
+}
+.background_event{
+    background-color: rgba(0, 0, 0, 0.644);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.hit-more_event-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+}
+#hit-more_event h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.9rem;
+}
+#hit-more_event p {
+    font-size: 1rem;
+    margin-bottom:  2rem;
+}
+#hit-more_event i {
+    font-size: 3.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all linear;
+}
+#hit-more_event i:hover {
+    animation:  ring 0.25s linear forwards;
+}
+@keyframes ring {
+    to {
+        transform: rotate(360deg);
+        outline: 0.1rem solid var(--primary);
+        outline-offset: 0.2rem;
+        color:  rgb(249 140 67);
+    }
+}
+#hit-experience {
+    padding: 5rem 10rem;
+    text-align: center;
+    background-color: var(--background);
+}
+.swiper {
+    padding: 1rem 2rem;
+}
+.hit-experience_heading {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+.swiper-slide {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+.swiper-slide img {
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+    border-radius: 50%;
+    outline: 3px solid var(--primary);
+}
+.swiper-title {
+    padding: 1rem 1rem;
+}
+.swiper-icon {
+    font-size: 1rem;
+    margin: 1.5rem 0;
+}
+.swiper-icon i {
+    color: var(--primary);
+}
+.swiper-infor{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 2.5rem;
+    position: relative;
+    z-index: 4;
+}
+.swiper-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+.swiper-subtext {
+    margin-top: 0.2rem;
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 0.1rem;
+} 
+.icon {
+    margin: 0 0.2rem;
+}
+.swiper-title {
+    font-size: 1.2rem;
+}
+.swiper-infor p {
+    font-size: 0.9rem;
+    color: var(--subcolor-text);
+}
+.background_infor {
+    background-color: rgb(250, 218, 195);
+    z-index: -1     ;
+}
+.swiper-wrapper{
+    margin-bottom: 3.5rem
+}
+.swiper-pagination span {
+    background-color: var(--primary);
+}
+.swiper-pagination span:active {
+    transform: scale(1.2);
+}
+#hit-contact {
+    text-align: center;
+    padding: 5rem 5rem;
+}
+.contact-heading {
+    padding: 1rem 10rem 3rem
+}
+#hit-contact h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+#hit-contact p {
+    color: var(--subcolor-text);
+    margin-bottom: 5rem;
+}
+.form-email {
+    width: 85%;
+}
+.contact-email {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(205, 205, 205, 0.751);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+}
+.contact-email:hover {
+    border: 1px solid rgba(0, 0, 0, 0.901);
+}
+.form-email input {
+    border: none;
+    font-size: 1rem;
+    padding: 0.3rem 0 0.5rem 0.3rem;
+    width: 100%;
+    outline: none;
+}
+.form-email input:active ~ .contact-heading {
+    border: 1px solid var(--primary);
+}
+.form-button {
+    width: 15%;
+    height: 100%;
+}
+.form-button button {
+    padding: 1rem 1rem;
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    border: none;
+    background: var(--primary);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+.form-button button:hover {
+    background-color: rgb(238, 165, 116);
+}
+#footer {
+    background-color: #011C3A;
+}
+.footer-infor {
+    display: grid;
+    padding: 5rem 5rem;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+.infor-about {
+    padding: 1rem;
+    text-align: left;
+}
+.infor-about img {
+    padding: 2rem 0rem;
+    width: 80%;
+}
+.about-title {
+    font-size: 1.7rem;
+    color: white;
+}
+.infor-content {
+    margin: 1.5rem 0;
+}
+.infor-content p {
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 500;
+    line-height: 1.2rem;
+    margin: 1.5rem 0;
+}
+.infor-content ul {
+    list-style: none;
+}
+.infor-content ul > li > i {
+    font-size: 1rem;
+    color: white;
+    margin-right: 0.5rem;
+}
+.infor-content ul > li > span {
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+.infor-content ul > li  {
+    display: flex;
+    align-items: center;
+}
+.about-icon i {
+    color: white;
+    margin: 0 0.4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.infor-item {
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: all linear;
+
+}
+.infor-item:hover > span,
+.infor-item:hover i,
+.about-icon i:hover {
+    color: rgba(252, 241, 235, 0.493) ;
+}
