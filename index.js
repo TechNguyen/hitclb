@@ -1079,3 +1079,24 @@ Lớp Java Web
 		}
 	})
 })
+
+
+
+const ontop = document.getElementById('ontop-btn');
+const headerEl = document.querySelector('.header');
+
+document.addEventListener('scroll', function () {
+    if(window.scrollY >= 250) {  
+        headerEl.style.height = "calc(var(--height-header) - 1.5rem)"
+    } else {
+        headerEl.style.height = "var(--height-header)"
+    }
+    if(window.scrollY >= 600) {
+        ontop.style.display = "block"
+    } else {
+        ontop.style.display = "none"
+    }
+})
+ontop.addEventListener('click', function () {
+    window.scrollTo({top: 0, behavior: "smooth"})
+})
