@@ -1,0 +1,198 @@
+@media (max-width: 600px) {
+    .header {
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 10%;
+        align-items: center;
+        box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.341);
+    }
+    .header-infor {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tabet-mobile {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .header-item {
+        margin: 1rem 0.2rem;
+        min-width: max-content;
+        width: 100%;
+         padding: 0.7rem 0.5rem;
+
+    }
+    .header-login {
+        min-width: max-content;
+        margin-bottom: 2rem;
+    }
+    .header-logo {
+        margin: 1rem 0.5rem;
+        width: 3.4rem;
+        height: 3.4rem;
+    }
+    .hit-class_item {
+        gap: 1rem;
+    }
+    .hit-director {
+        padding: 5rem 5rem;
+    }
+    .hit-img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .hit-class_item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .hit-directors_infor,
+    .hit-event_infor {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    .swiper-slide img {
+        width: inherit;
+    }
+    .hit-event_infor img {
+        width: 90%;
+        margin-top: 1.5rem;
+        border-radius: 16px;
+    }
+    .hit-event_infor-content h3 {
+        font-size: 2.5rem;
+    }
+    .hit-event_infor-content p {
+        font-size: 0.9rem;
+    }
+    .footer-infor {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+    }
+    .contact-heading {
+        padding: 0 !important;
+    }
+    #hit-experience {
+        padding: 5rem 0 ;
+    }
+}
+@media (min-width: 600px) and (max-width: 890px) {
+    .header {
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 10%;
+        align-items: center;
+        box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.341);
+    }
+    .header-infor {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tabet-mobile {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .header-item {
+        margin: 1rem 0.2rem;
+        min-width: max-content;
+        width: 100%;
+         padding: 0.7rem 0.5rem;
+
+    }
+    .header-login {
+        min-width: max-content;
+        margin-bottom: 2rem;
+    }
+    .header-logo {
+        margin: 1rem 0.5rem;
+        width: 3.4rem;
+        height: 3.4rem;
+    }
+    .hit-class_item {
+        gap: 1rem;
+    }
+    .hit-director {
+        padding: 5rem 5rem;
+    }
+    .hit-img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .hit-class_item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .hit-directors_infor,
+    .hit-event_infor {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    .swiper-slide img {
+        width: inherit;
+    }
+    .hit-event_infor img {
+        width: 90%;
+        margin-top: 1.5rem;
+        border-radius: 16px;
+    }
+    .hit-event_infor-content h3 {
+        font-size: 2.5rem;
+    }
+    .hit-event_infor-content p {
+        font-size: 0.9rem;
+    }
+    .footer-infor {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+    .contact-heading {
+        padding: 0 !important;
+    }
+    #hit-experience {
+        padding: 5rem 0 ;
+    }
+}
+
+
+@media (min-width: 890px) and (max-width: 1120px) {
+    .header {
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 10%;
+        align-items: center;
+        box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.341);
+    }
+    .header-infor {
+        flex-direction: column;
+    }
+    .tabet-mobile {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .header-item {
+        margin: 1rem 0.2rem;
+        min-width: max-content;
+        width: 100%;
+         padding: 0.7rem 0.5rem;
+
+    }
+    .header-login {
+        min-width: max-content;
+        margin-bottom: 2rem;
+    }
+    .header-logo {
+        margin: 1rem 0.5rem;
+        width: 3.4rem;
+        height: 3.4rem;
+    }
+    .header-infor {
+        align-items: flex-start;
+    }
+}

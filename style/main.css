@@ -8,6 +8,7 @@
     --text-color: rgba(0,0,0,1);
     --height-header: 6rem;
     --primary-padding: 5rem;
+    --width-header: 5rem;
     --body : rgb(23,43,77);
     --subcolor-text: rgba(0, 0, 0, 0.633);
     --background: rgb(252, 241, 235);
@@ -22,7 +23,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
 .header {
     display: flex;
     padding: 0 var(--primary-padding);
@@ -36,6 +36,31 @@ body {
     width: 100%;
     background: white;
     transition: all 0.25s linear;
+}
+.nav-icon {
+    position: fixed;
+    max-width: max-content;
+    min-width: max-content;
+    z-index: 100000;
+    padding: 0.8rem;
+    border-radius: 50%;
+    top: 2%;
+    right: 1%;
+    transition: all linear 0.2s;
+    background-color: rgb(248, 200, 167);
+    border: none;
+}
+.nav-icon i {
+    font-size: 1.2rem;
+}
+.nav-icon:hover {
+    outline: 2px solid var(--primary);
+    outline-offset: 1px;
+    cursor: pointer;
+}
+.transform{
+    transition: all 0.35s ease-in;
+   transform: translateX(100%);
 }
 .header-infor {
     display: flex;
@@ -496,9 +521,13 @@ body {
     align-items: center;
     padding: 1rem 3rem;
 }
+.swiper-img {
+    width: 5rem;
+    height: 5rem;
+}
 .swiper-slide img {
-    width: 10%;
-    height: 10%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 50%;
     outline: 3px solid var(--primary);
@@ -601,7 +630,6 @@ body {
     border: 1px solid var(--primary);
 }
 .form-button {
-    width: 15%;
     height: 100%;
 }
 .form-button button {

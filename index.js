@@ -1084,19 +1084,38 @@ Lớp Java Web
 
 const ontop = document.getElementById('ontop-btn');
 const headerEl = document.querySelector('.header');
+const navBar = document.querySelector('.nav-icon')
+const navBaricon = document.querySelector('.nav-icon i');
 
-document.addEventListener('scroll', function () {
-    if(window.scrollY >= 250) {  
-        headerEl.style.height = "calc(var(--height-header) - 1.5rem)"
+if(window.innerWidth >= 1120) {
+    document.addEventListener('scroll', function () {
+        if(window.scrollY >= 250) {  
+            headerEl.style.height = "calc(var(--height-header) - 1.5rem)"
+        } else {
+            headerEl.style.height = "var(--height-header)"
+        }
+        if(window.scrollY >= 600) {
+            ontop.style.display = "block"
+        } else {
+            ontop.style.display = "none"
+        }
+    })
+    ontop.addEventListener('click', function () {
+        window.scrollTo({top: 0, behavior: "smooth"})
+    })
+    navBar.style.display = "none";
+} else {
+    navBar.style.display = "flex"
+}
+
+navBar.addEventListener('click', function () {
+    if(headerEl.className == "header") {
+        headerEl.classList.add('transform');
+        navBaricon.className =  "fa-solid fa-xmark";
     } else {
-        headerEl.style.height = "var(--height-header)"
+        headerEl.classList.remove('transform');
+        navBaricon.className = "fa-solid fa-bars";
     }
-    if(window.scrollY >= 600) {
-        ontop.style.display = "block"
-    } else {
-        ontop.style.display = "none"
-    }
-})
-ontop.addEventListener('click', function () {
-    window.scrollTo({top: 0, behavior: "smooth"})
+    // return navBar.innerHTML == `<i class="fa-solid fa-bars"></i>` ? 
+    // navBar.innerHTML =  `<i class="fa-solid fa-xmark"></i>` :  navBar.innerHTML == `<i class="fa-solid fa-bars"></i>`;
 })
